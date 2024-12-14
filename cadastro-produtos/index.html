@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <span>Cadastro de Produtos</span>
+        <button onclick="openModal()" id="new">Incluir</button>
+      </div>
+
+      <div class="divTable">
+        <table>
+          <thead>
+            <tr>
+              <th>Codigo do Produto</th>
+              <th>Nome</th>
+              <th>Quantidade de Estoque</th>
+              <th>Preço</th>
+              <th class="acao">Editar</th>
+              <th class="acao">Excluir</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="modal-container">
+        <div class="modal">
+          <form action="/cadastro-produtos/index.html" method="post">
+            <label for="codigo_produto">Codigo do Produto</label>
+            <input id="codigo_produto" type="text" name="codigo_produto" required />
+            
+            <label for="nome_produto">Nome</label>
+            <input id="nome_produto" type="text" name="nome_produto" required />
+
+            <label for="quantidade_estoque">Quantidade de Estoque</label>
+            <input id="quantidade_estoque" type="number" name="quantidade_estoque" required />
+
+              <label for="preco_produto">Preço</label>
+              <input id="preco_produto" type="number" name="preco_produto" required />
+
+              <button type="submit" id="btnSalvar">Salvar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUAFLAME - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="../assets/Logo profissão.png" alt="Descrição da imagem" class="logo-image">
+    </div>
+        
+    </div>
+    <div class="main-container">
+        <div class="left-container">
+            <div class="login-box">
+                <form action="/loginEmpresas/login.html" method="post">
+                    <input type="text" placeholder="E-mail" class="input-field" id="email" name="email" required>
+                    <input type="password" placeholder="Senha" class="input-field" id="senha" name="senha" required>
+                    <button type="submit" class="login-button" id="enter-input" onclick="botaoEntrar()">Entrar</button>
+                </form>
+                <div class="forgot-password">
+                    <a onclick="alert('Um código de verificação foi enviado para o seu email!')">Esqueceu a senha?</a>
+                </div>
+                <div class="create-account">
+                    <p>Ainda não tem uma conta? <a href="../cadastrarEmpresas/index.html">Crie uma página aqui</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
