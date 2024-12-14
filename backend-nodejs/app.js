@@ -16,9 +16,9 @@ app.use(cors());
 
 // Conexão com o banco de dados MySQL
 const db = mysql.createConnection({
-  host: "localhost",
+  host: "https://aquaflameweb.online",
   user: "root",
-  password: "",
+  password: "Ba4+9NGV!I#",
   database: "db_aquaflame"
   
 });

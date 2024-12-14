@@ -1,4 +1,5 @@
-CREATE SCHEMA db_aquaflame;
+/*CREATE SCHEMA db_aquaflame;*/
+
 CREATE TABLE IF NOT EXISTS empresa_distribuidora(
 	i_id_empresa int primary key not null auto_increment,
     s_nome_empresa varchar(100) not null,
